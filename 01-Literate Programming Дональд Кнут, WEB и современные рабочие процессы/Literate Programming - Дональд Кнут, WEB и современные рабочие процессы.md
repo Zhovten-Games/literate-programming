@@ -2,7 +2,8 @@
 lang: "ru"
 title: "Literate Programming: Дональд Кнут, WEB и современные рабочие процессы"
 abstract: |
-  Donald Knuth’s 1984 article *Literate Programming* proposed that programs should be written primarily for human readers and only secondarily transformed into machine-executable form. This review reconstructs that argument through the WEB system and examines how its central principle persists across contemporary engineering practices. It distinguishes direct or historically proximate continuations, such as CWEB and noweb, from instrumentally related workflows, such as Org Babel, and from broader conceptual associations involving executable documents, reproducible environments, IDE navigation, and LLM-assisted development. A companion suite remasters Knuth’s prime-number example in several deterministic workflows and introduces Prompt-Literate Workflow as a controlled boundary case for probabilistic generation. The review argues that LLM output should be treated not as a build artifact, but as a candidate artifact governed by a human-authored plan, chunk contracts, bounded prompts, review, tests, smoke-checks, and traceability. The concluding section extends this logic towards literate design and GDD pipelines.
+  В статье Literate Programming 1984 года Дональд Кнут предложил писать программы прежде всего для человеческого чтения и лишь затем для машинного исполнения. Настоящий обзор реконструирует эту аргументацию через систему WEB и прослеживает её актуальность для генерации исходного кода, исполняемых документов, воспроизводимых окружений и LLM-assisted разработки.
+keywords: литературное программирование, Дональд Кнут, WEB, программная инженерия, воспроизводимые исследования, исполняемые документы, LLM-assisted разработка, Prompt-Literate Workflow, literate design
 link-citations: true
 bibliography:
   - "Bibliography/Primary Sources.json"

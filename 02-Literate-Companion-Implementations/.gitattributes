@@ -1,0 +1,13 @@
+# Keep literate companion sources stable across Windows/WSL.
+*.nw text eol=lf
+*.cpp text eol=lf
+*.w text eol=lf
+*.c text eol=lf
+*.h text eol=lf
+*.md text eol=lf
+*.qmd text eol=lf
+*.Rmd text eol=lf
+*.py text eol=lf
+*.ipynb text eol=lf
+Makefile text eol=lf
+.gitignore text eol=lf

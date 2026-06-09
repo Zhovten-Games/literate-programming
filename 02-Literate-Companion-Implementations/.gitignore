@@ -1,0 +1,63 @@
+# Local binaries and outputs
+**/primes
+**/primes.exe
+**/output.txt
+
+# CWEB generated artifacts
+**/01-cweb/primes.c
+**/01-cweb/primes.tex
+**/01-cweb/primes.idx
+**/01-cweb/primes.scn
+# Table-of-contents artifact from cweave/pdftex
+**/01-cweb/primes.toc
+**/01-cweb/primes.log
+**/01-cweb/primes.pdf
+**/01-cweb/primes.dvi
+
+# Org Babel generated artifact
+**/03-org-babel/primes.cpp
+
+# Quarto local render artifacts
+**/04-quarto/primes.html
+**/04-quarto/*_files/
+**/04-quarto/.quarto/
+**/04-quarto/_freeze/
+
+# Jupyter checkpoints
+**/.ipynb_checkpoints/
+**/05-jupyter/.ipynb_checkpoints/
+
+# Jupyter execution artifacts
+**/*.executed.ipynb
+
+# R / R Markdown local artifacts
+# R Markdown intermediate artifacts
+**/06-rmarkdown/primes.knit.md
+
+**/06-rmarkdown/primes.html
+**/06-rmarkdown/*_files/
+**/06-rmarkdown/.Rhistory
+**/06-rmarkdown/.RData
+**/06-rmarkdown/.Rproj.user/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Python virtual environments
+.venv/
+**/.venv/
+venv/
+**/venv/
+
+# Quarto execution intermediates
+**/*.quarto_ipynb
+
+# R local package library
+.rlib/
+**/.rlib/

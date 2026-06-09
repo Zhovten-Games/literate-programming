@@ -1,0 +1,54 @@
+---
+title: "Prime Table Example"
+output: html_document
+---
+
+```{r}
+PRIME_COUNT <- 1000
+ROWS_PER_PAGE <- 50
+COLUMNS_PER_PAGE <- 4
+COLUMN_WIDTH <- 10
+
+generate_primes <- function(count) {
+  primes <- c()
+  if (count == 0) return(primes)
+  primes <- c(primes, 2)
+  candidate <- 3
+  while (length(primes) < count) {
+    is_prime <- TRUE
+    for (p in primes) {
+      if (p > candidate %/% p) break
+      if (candidate %% p == 0) {
+        is_prime <- FALSE
+        break
+      }
+    }
+    if (is_prime) primes <- c(primes, candidate)
+    candidate <- candidate + 2
+  }
+  primes
+}
+
+print_table <- function(primes) {
+  page_number <- 1
+  page_offset <- 0
+  while (page_offset < length(primes)) {
+    cat(sprintf("The First %d Prime Numbers --- Page %d\n\n", length(primes), page_number))
+    for (row in 0:(ROWS_PER_PAGE - 1)) {
+      line <- ""
+      for (column in 0:(COLUMNS_PER_PAGE - 1)) {
+        index <- page_offset + row + column * ROWS_PER_PAGE + 1
+        if (index <= length(primes)) {
+          line <- paste0(line, sprintf("%*d", COLUMN_WIDTH, primes[index]))
+        }
+      }
+      cat(line, "\n", sep = "")
+    }
+    cat("\n")
+    page_number <- page_number + 1
+    page_offset <- page_offset + ROWS_PER_PAGE * COLUMNS_PER_PAGE
+  }
+}
+
+print_table(generate_primes(PRIME_COUNT))
+```

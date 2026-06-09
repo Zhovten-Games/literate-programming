@@ -1,0 +1,136 @@
+[
+  {
+    "id": "gamma1994designPatterns",
+    "type": "book",
+    "author": [
+      {
+        "family": "Gamma",
+        "given": "Erich"
+      },
+      {
+        "family": "Helm",
+        "given": "Richard"
+      },
+      {
+        "family": "Johnson",
+        "given": "Ralph"
+      },
+      {
+        "family": "Vlissides",
+        "given": "John"
+      }
+    ],
+    "title": "Design Patterns: Elements of Reusable Object-Oriented Software",
+    "publisher": "Addison-Wesley",
+    "publisher-place": "Reading, MA",
+    "issued": {
+      "date-parts": [
+        [
+          1994
+        ]
+      ]
+    },
+    "ISBN": "9780201633610",
+    "number-of-pages": "416",
+    "note": "Commonly known as the Gang of Four / GoF book."
+  },
+  {
+    "id": "martin2017cleanArchitecture",
+    "type": "book",
+    "author": [
+      {
+        "family": "Martin",
+        "given": "Robert C."
+      }
+    ],
+    "title": "Clean Architecture: A Craftsman's Guide to Software Structure and Design",
+    "publisher": "Prentice Hall",
+    "publisher-place": "Boston",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "ISBN": "9780134494166",
+    "number-of-pages": "432",
+    "edition": "1st",
+    "note": "Pearson / Prentice Hall"
+  },
+  {
+    "id": "knuth1984a",
+    "type": "article-journal",
+    "author": [
+      {
+        "family": "Knuth",
+        "given": "Donald E."
+      }
+    ],
+    "title": "Literate Programming",
+    "container-title": "The Computer Journal",
+    "issued": {
+      "date-parts": [
+        [
+          1984
+        ]
+      ]
+    },
+    "DOI": "10.1093/comjnl/27.2.97",
+    "URL": "https://doi.org/10.1093/comjnl/27.2.97"
+  },
+  {
+    "id": "knuth1992a",
+    "type": "webpage",
+    "author": [
+      {
+        "family": "Knuth",
+        "given": "Donald E."
+      },
+      {
+        "family": "Levy",
+        "given": "Silvio"
+      }
+    ],
+    "title": "The CWEB System of Structured Documentation",
+    "URL": "https://www-cs-faculty.stanford.edu/~knuth/cweb.html",
+    "note": "TODO: verify year metadata"
+  },
+  {
+    "id": "dijkstra1972notes",
+    "type": "chapter",
+    "author": [
+      {
+        "family": "Dijkstra",
+        "given": "Edsger W."
+      }
+    ],
+    "title": "Notes on Structured Programming",
+    "container-title": "Structured Programming",
+    "editor": [
+      {
+        "family": "Dahl",
+        "given": "O.-J."
+      },
+      {
+        "family": "Dijkstra",
+        "given": "E. W."
+      },
+      {
+        "family": "Hoare",
+        "given": "C. A. R."
+      }
+    ],
+    "publisher": "Academic Press",
+    "publisher-place": "London",
+    "issued": {
+      "date-parts": [
+        [
+          1972
+        ]
+      ]
+    },
+    "page": "1-82",
+    "note": "Structured-programming context for reading Knuth; archival variant: EWD249 (T.H.-Report 70-WSK-03, second edition April 1970; original August 1969)."
+  }
+]

@@ -27,6 +27,7 @@ zg_bibliography_sections:
   - title: "E. Управление и provenance-контекст"
     bibliography: "Bibliography/Governance and Provenance.json"
     level: 3
+zg_doi: "10.5281/zenodo.20608559"
 ---
 
 ## Методологическая рамка обзора

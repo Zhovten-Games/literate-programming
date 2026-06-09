@@ -1,0 +1,3 @@
+[submodule "prompt-literate-workflow"]
+	path = prompt-literate-workflow
+	url = https://github.com/IRONCREED/prompt-literate-workflow.git

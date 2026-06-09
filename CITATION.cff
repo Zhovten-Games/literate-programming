@@ -1,11 +1,17 @@
 cff-version: 1.2.0
-message: "If you use Prompt-Literate Workflow, please cite it using these metadata."
-title: "Prompt-Literate Workflow"
+message: "If you use this repository, please cite it using these metadata."
+title: "Literate Programming: Donald Knuth, WEB, and Contemporary Workflows"
 type: software
-version: 0.1.0
-repository-code: "https://github.com/IRONCREED/prompt-literate-workflow"
+version: "1.0.0"
+date-released: "2026-06-09"
+repository-code: "https://github.com/Zhovten-Games/literate-programming"
 authors:
-  - name: "pan-canon"
-    website: "https://github.com/pan-canon/"
-  - name: "dubinetsky"
-    website: "https://github.com/dubinetsky/"
+
+* given-names: "Sam"
+  family-names: "Starling"
+  orcid: "https://orcid.org/0009-0009-2621-6372"
+  website: "https://github.com/pan-canon/"
+* given-names: "Oksana"
+  family-names: "Dubinetska"
+  orcid: "https://orcid.org/0009-0003-8777-8412"
+  website: "https://github.com/dubinetsky/"

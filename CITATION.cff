@@ -5,59 +5,64 @@ type: software
 version: "1.0.0"
 date-released: "2026-06-09"
 repository-code: "https://github.com/Zhovten-Games/literate-programming"
+url: "https://github.com/Zhovten-Games/literate-programming"
 
 authors:
-
-* given-names: "Sam"
-  family-names: "Starling"
-  orcid: "https://orcid.org/0009-0009-2621-6372"
-  website: "https://github.com/pan-canon/"
-* given-names: "Oksana"
-  family-names: "Dubinetska"
-  orcid: "https://orcid.org/0009-0003-8777-8412"
-  website: "https://github.com/dubinetsky/"
+  - given-names: "Sam"
+    family-names: "Starling"
+    orcid: "https://orcid.org/0009-0009-2621-6372"
+    website: "https://github.com/pan-canon/"
+  - given-names: "Oksana"
+    family-names: "Dubinetska"
+    orcid: "https://orcid.org/0009-0003-8777-8412"
+    website: "https://github.com/dubinetsky/"
 
 preferred-citation:
-type: article
-title: "Literate Programming: Donald Knuth, WEB, and Contemporary Workflows"
-authors:
-- given-names: "Sam"
-family-names: "Starling"
-orcid: "https://orcid.org/0009-0009-2621-6372"
-- given-names: "Oksana"
-family-names: "Dubinetska"
-orcid: "https://orcid.org/0009-0003-8777-8412"
-doi: "10.5281/zenodo.20608559"
-year: 2026
+  type: article
+  title: "Literate Programming: Donald Knuth, WEB, and Contemporary Workflows"
+  authors:
+    - given-names: "Sam"
+      family-names: "Starling"
+      orcid: "https://orcid.org/0009-0009-2621-6372"
+    - given-names: "Oksana"
+      family-names: "Dubinetska"
+      orcid: "https://orcid.org/0009-0003-8777-8412"
+  doi: "10.5281/zenodo.20608559"
+  year: 2026
 
 references:
-
-* type: article
-  title: "Literate Programming"
-  authors:
-
-  * given-names: "Donald E."
-    family-names: "Knuth"
+  - type: article
+    title: "Literate Programming"
+    authors:
+      - given-names: "Donald E."
+        family-names: "Knuth"
     journal: "The Computer Journal"
     doi: "10.1093/comjnl/27.2.97"
     year: 1984
 
-* type: book
-  title: "The CWEB System of Structured Documentation"
-  authors:
-
-  * given-names: "Donald E."
-    family-names: "Knuth"
-  * given-names: "Silvio"
-    family-names: "Levy"
-    isbn: "0-201-57569-8"
+  - type: software
+    title: "CWEB"
+    authors:
+      - given-names: "Donald E."
+        family-names: "Knuth"
+      - given-names: "Silvio"
+        family-names: "Levy"
+    repository-code: "https://github.com/ascherer/cweb"
     url: "https://www-cs-faculty.stanford.edu/~knuth/cweb.html"
+
+  - type: book
+    title: "The CWEB System of Structured Documentation"
+    authors:
+      - given-names: "Donald E."
+        family-names: "Knuth"
+      - given-names: "Silvio"
+        family-names: "Levy"
+    isbn: "0-201-57569-8"
     year: 1993
 
-* type: software
-  title: "noweb"
-  authors:
-
-  * given-names: "Norman"
-    family-names: "Ramsey"
+  - type: software
+    title: "noweb"
+    authors:
+      - given-names: "Norman"
+        family-names: "Ramsey"
     repository-code: "https://github.com/nrnrnr/noweb"

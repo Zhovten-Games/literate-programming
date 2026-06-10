@@ -12,7 +12,7 @@ bibliography:
   - "Bibliography/LLM and AI-Assisted Programming.json"
   - "Bibliography/Governance and Provenance.json"
 zg_bibliography_sections:
-  - title: "A. Primary Knuth / WEB / CWEB, structured-programming, and software-design context"
+  - title: "A. Primary Donald Knuth / WEB / CWEB, structured-programming, and software-design context"
     bibliography: "Bibliography/Primary Sources.json"
     level: 3
   - title: "B. Direct literate-programming tools and descendants"
@@ -40,6 +40,8 @@ At the same time, the tools and practices discussed in this review are not treat
 
 This comparison follows the logic that Donald Knuth himself sets out in the Related Work section: the strength of WEB lay not in the invention of each individual element, but in bringing existing ideas together into an integrated working method.
 
+\newpage
+
 # Table of Contents
 
 ## Main Article
@@ -57,6 +59,8 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
 * **M. Related Work** — related lineages: structured programming, documentation systems, and executable-document practices.
 * **N. Retrospect and Prospects** — a retrospective assessment of the method and its future prospects.
 * **Conclusions 1–5** — which aspects of Knuth’s idea persist literally, which have shifted towards reproducible research and notebook environments, and which are re-emerging in LLM-assisted workflows.
+
+\newpage
 
 ## Repository Navigation
 
@@ -85,6 +89,8 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
 * `05-jupyter` — a notebook route with particular attention to execution, hidden state, and reproducible execution;
 * `06-rmarkdown` — a reproducible report workflow based on R Markdown / knitr / Pandoc.
 
+\newpage
+
 ### Prompt-Literate Workflow and the Boundary LLM Example
 
 * public repository for the Prompt-Literate Workflow methodology:
@@ -111,6 +117,8 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
 * `output.expected.txt` — expected output markers;
 * `TRACE.md` — a log of the model, prompt run, review, manual edits, validation, and acceptance decision.
 
+\newpage
+
 # Main Article
 
 ## Opening Remarks
@@ -122,6 +130,8 @@ The historical significance of Donald Knuth’s article *Literate Programming* b
 In 2026, this formulation has acquired additional relevance because the software-development workflow itself has changed. If the classical model can be described as a movement from one human being to another and then to a machine, an AI-assisted workflow increasingly involves a chain in which a human formulates an intention for a machine, while one computational system helps produce input for another. A prompt, however, is not in itself a literate source. A contemporary AI-based approach can be regarded as a substantive continuation of literate programming only if it preserves an engineering discipline: explanation → specification → code → tests → artifact. Without this chain, what accelerates is not so much the understanding of a program as the production of code with insufficient verifiability and a weak explanatory structure.
 
 In this review, WEB is treated as the original form of this idea. In Donald Knuth’s model, a single source generates two projections: a document for the human reader and a program for the machine. This relationship between explanation, code, and the build mechanism connecting them serves as the principal criterion for the analysis that follows. The purpose of the review is not to reproduce the Pascal example as a self-contained historical object. The example’s codebase has been remastered in C++, while the primary demonstration route has been implemented in a noweb-like form: it preserves named chunks and tangling without requiring entry into the more elaborate CWEB/TeX toolchain.
+
+\newpage
 
 The subsequent analysis compares several instrumental and methodological lineages:
 
@@ -200,6 +210,8 @@ In our remaster equivalent, `primes.nw` serves as the source of truth.
 * `notangle` expands the chunk references and generates ordinary C++.
 * The C++ compiler never sees the noweb markers; it sees only the generated `primes.cpp`.
 
+\newpage
+
 ### E. The Machine-Oriented Projection: TANGLE
 
 Section E establishes the machine-oriented projection: `TANGLE` transforms `PRIMES.WEB` into `PRIMES.PAS`.
@@ -219,6 +231,8 @@ Section F defines a separate branch for generating a readable document: in WEB/C
 `02-noweb-like` presents a tangle-first C++ remaster. It preserves the minimal practical core of the method: a canonical literate source, named chunks, a generated machine artifact, and a smoke-check verification artifact. A separate branch for generating a readable document is not mandatory in this version.
 
 The material below is presented as a unified literate form of the remaster: the explanation remains adjacent to the corresponding chunks rather than being extracted into separate, repetitive sections.
+
+\newpage
 
 The top level defines the program’s intent and order of composition:
 
@@ -249,6 +263,8 @@ int main() {
 <<table-output>>
 @
 ```
+
+\newpage
 
 The output parameters define the table layout and preserve the connection with Donald Knuth’s original example:
 
@@ -288,6 +304,8 @@ void print_table(const PrimeTable& primes);
 @
 ```
 
+\newpage
+
 Prime-number generation preserves the algorithm of the remaster version without altering its logic:
 
 ```text
@@ -314,6 +332,8 @@ bool is_prime_candidate(int candidate, const PrimeTable& primes) {
 }
 @
 ```
+
+\newpage
 
 The output phase preserves the page-by-page layout and the calculation of indices by row and column:
 
@@ -357,6 +377,8 @@ The significance of this section does not lie in the features themselves. Many o
 
 The point is that a literate tool must be capable of working with the messy realities of a language and platform, rather than only with an idealised example. The prime-number example explains the principle, not the entire production toolchain.
 
+\newpage
+
 For the noweb-like C++ remaster, this can be expressed as follows:
 
 ```text
@@ -398,6 +420,8 @@ Donald Knuth then qualifies the practical limitations of the model. Real machine
 WEB’s solution is **change files**. TANGLE and WEAVE read not only the primary WEB file, but also a separate `.CH` file containing substitutions for a particular system. As a result, the master source remains stable, while platform-specific modifications are maintained separately. Donald Knuth emphasises that `TANGLE.WEB` itself remains effectively unchanged: it is `TANGLE.CH` that varies, while the core logic of TANGLE remains shared across systems.
 
 Donald Knuth’s approach to literate programming is not detached from build and distribution processes.
+
+\newpage
 
 For our noweb-like C++ remaster, this can be represented as follows:
 
@@ -461,6 +485,8 @@ In Section K, Donald Knuth moves from the architecture of WEB to the style of wo
 
 The central question of the section is how sections should be named and organised. Donald Knuth distinguishes between macros and named fragments: small technical abbreviations may remain macros, but larger parts of a program should receive human-readable names. Such a name need not be formally exhaustive; it should express the meaning of the fragment with sufficient precision, without burdening the reader with excessive detail.
 
+\newpage
+
 A poor section name in the noweb-like C++ remaster:
 
 ```text
@@ -512,6 +538,8 @@ This section therefore draws a boundary between literate programming and contemp
 In Section L, Donald Knuth asks a pragmatic question: what does WEB cost? He begins by considering direct computational expenses. TANGLE takes approximately as much time as compiling the resulting Pascal file; WEAVE also runs reasonably quickly, although TeX typesetting is already noticeably more expensive. It is therefore not always sensible to rebuild and print the documentation in full several times a day.
 
 Documentation is rarely printed today, but the central economic argument does not concern processor time or the cost of paper. Donald Knuth argues that the total time he spends writing and debugging a WEB program is no greater than the time required to write and debug an ordinary ALGOL or Pascal program, despite the substantially more extensive documentation that results. The additional time devoted to explanation is recovered through reduced debugging effort, because the mode of exposition forces the author to clarify ideas earlier. When a program is written “for oneself”, it is easy to rely on shortcuts that later become sources of error. When a program is written as an explanation, it becomes more difficult for the author to deceive himself.
+
+\newpage
 
 For the noweb-like C++ remaster, this means that the cost of the method must be stated plainly:
 
@@ -584,6 +612,8 @@ These lines of development can then be brought together in a two-track conclusio
 
 The final section thus transforms the particular experience of WEB into a broader conclusion: classical WEB remained a niche tool, but its principles spread far more widely.
 
+\newpage
+
 ## Conclusion. 1. What Donald Knuth Actually Proposed
 
 Donald Knuth’s central proposal cannot be reduced to improved commenting. A comment usually remains a secondary layer: it explains code that has already been organised in an order determined by the compiler, the programming language, or the author’s habits. *Literate programming* proposes a stronger model: a program should be constructed from the outset as an explanatory document intended for human reading.
@@ -631,6 +661,8 @@ This concludes the retrospective part of the review proper. The scope will now b
 Large language models (LLMs) make Donald Knuth’s question newly urgent. If the source of truth is reduced to a prompt alone, literate programming does not emerge. What results is the rapid generation of code from an intention, but not necessarily an explainable, verifiable, and maintainable source. A prompt may be a useful input, but by itself it rarely records the architecture, constraints, invariants, test scenarios, and traceability of the accepted decision.
 
 The difference between TANGLE and an LLM is fundamental. TANGLE deterministically transforms a structured source into a program artifact. An LLM probabilistically continues text on the basis of context, instructions, and examples. LLM output therefore cannot be treated as a build branch: it must be regarded as a candidate artifact that undergoes review and testing before being incorporated back into a managed source.
+
+\newpage
 
 A strong contemporary version looks as follows:
 
@@ -698,5 +730,7 @@ Literate programming is not required everywhere. But where understanding is itse
 
 [^gdd]: A game design document, or GDD, is a project document that connects a game's concept, rules, content, systems, and future implementation.
 
-## Bibliography
+\newpage
+
+# Bibliography
 <!-- ZG_BIBLIOGRAPHY_SECTIONS -->

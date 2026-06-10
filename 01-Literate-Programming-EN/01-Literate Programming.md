@@ -30,7 +30,7 @@ zg_bibliography_sections:
 zg_doi: "10.5281/zenodo.20608559"
 ---
 
-## Methodological Framework of the Review
+# Methodological Framework of the Review
 
 The breadth of the issues addressed is not accidental. Donald Knuth’s article is not narrowly focused documentation for the WEB system, but a methodological text written by a practising programmer who speaks simultaneously as an engineer and as a theorist of the profession. In discussing a specific tool, Knuth addresses the structure of a program, the order in which it should be explained, style, portability, development costs, the publication of code, and the future form of programming environments. Any contemporary commentary on this work therefore inevitably extends beyond the reconstruction of WEB and requires several engineering lineages to be compared.
 
@@ -40,9 +40,9 @@ At the same time, the tools and practices discussed in this review are not treat
 
 This comparison follows the logic that Donald Knuth himself sets out in the Related Work section: the strength of WEB lay not in the invention of each individual element, but in bringing existing ideas together into an integrated working method.
 
-## Table of Contents
+# Table of Contents
 
-### Main Article
+## Main Article
 
 * **Opening Remarks** — the historical framing of the problem, the comparative framework, and the rationale for a contemporary remaster approach.
 * **A. Introduction** — a shift in whom programming is primarily addressed to: from instructing the machine to explaining the program to a human reader.
@@ -58,17 +58,17 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
 * **N. Retrospect and Prospects** — a retrospective assessment of the method and its future prospects.
 * **Conclusions 1–5** — which aspects of Knuth’s idea persist literally, which have shifted towards reproducible research and notebook environments, and which are re-emerging in LLM-assisted workflows.
 
-### Repository Navigation
+## Repository Navigation
 
-#### Canonical Source of the Article
+### Canonical Source of the Article
 
 * public repository root: `https://github.com/Zhovten-Games/literate-programming`;
-* canonical source of the review: `01-Literate Programming - Knuth WEB and Contemporary Workflows/01-Literate Programming - Knuth WEB and Contemporary Workflows.md`;
-* author metadata file: `01-Literate Programming - Knuth WEB and Contemporary Workflows/authors.yml`;
-* bibliography inventory layer: `01-Literate Programming - Knuth WEB and Contemporary Workflows/Bibliography/Original.md`;
-* sectioned bibliography JSON: `01-Literate Programming - Knuth WEB and Contemporary Workflows/Bibliography/*.json`.
+* canonical source of the review: `01-Literate-Programming-EN/01-Literate Programming.md`;
+* author metadata file: `01-Literate-Programming-EN/authors.yml`;
+* bibliography inventory layer: `01-Literate-Programming-EN/Bibliography/Original.md`;
+* sectioned bibliography JSON: `01-Literate-Programming-EN/Bibliography/*.json`.
 
-#### Companion Suite
+### Companion Suite
 
 * root of the companion suite: `02-Literate-Companion-Implementations/`;
 * shared README for the companion suite: `02-Literate-Companion-Implementations/README.md`;
@@ -76,7 +76,7 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
 * English branch of the examples: `02-Literate-Companion-Implementations/examples/en/`;
 * Russian branch of the examples: `02-Literate-Companion-Implementations/examples/ru/`.
 
-#### Deterministic Companion Examples 01–06
+### Deterministic Companion Examples 01–06
 
 * `01-cweb` — the more canonical CWEB route, with an explicit two-branch `tangle / weave` model;
 * `02-noweb-like` — the primary lightweight C++ remaster, centred on a `tangle-first workflow`;
@@ -85,7 +85,7 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
 * `05-jupyter` — a notebook route with particular attention to execution, hidden state, and reproducible execution;
 * `06-rmarkdown` — a reproducible report workflow based on R Markdown / knitr / Pandoc.
 
-#### Prompt-Literate Workflow and the Boundary LLM Example
+### Prompt-Literate Workflow and the Boundary LLM Example
 
 * public repository for the Prompt-Literate Workflow methodology:
   `https://github.com/IRONCREED/prompt-literate-workflow`;
@@ -98,7 +98,7 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
   `02-Literate-Companion-Implementations/methodology/extensions/primes-example/`;
 * `07-prompt-literate` — a demonstrative application of Prompt-Literate Workflow (PLW) to the prime-number example, rather than a definition of the method itself.
 
-#### Working Files within `07-prompt-literate`
+### Working Files within `07-prompt-literate`
 
 * `COMPANION.md` — entry point for the companion example;
 * `primes.plan.md` — human-authored plan and canonical source for the prompt-literate example;
@@ -697,3 +697,6 @@ Practical application has shown that a universal workflow must remain compact. D
 Literate programming is not required everywhere. But where understanding is itself part of production, its central idea remains relevant: first construct an explanatory source, then derive machine-oriented and human-oriented representations from it, rather than attempting to reconstruct meaning after the code has already emerged.
 
 [^gdd]: A game design document, or GDD, is a project document that connects a game's concept, rules, content, systems, and future implementation.
+
+## Bibliography
+<!-- ZG_BIBLIOGRAPHY_SECTIONS -->

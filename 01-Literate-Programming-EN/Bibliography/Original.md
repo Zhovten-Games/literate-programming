@@ -3,18 +3,18 @@
 ## 1) Scanned source zones
 
 1. Main article and drafts:
-- `at-work/Статья2/Обзор статьи Кнута.md`
-- `at-work/Статья2/Literate Programming/knuth-lp-ru.md`
-- `at-work/Статья2/Literate Programming/Литеральное программирование и LLM.md`
-- `at-work/Статья2/Literate Programming/Влияние статьи “Literate Programming” и системы WEB на вычислительную практику и программную инженерию.md`
+- `/Обзор статьи Кнута.md`
+- `/Literate Programming/knuth-lp-ru.md`
+- `/Literate Programming/Литеральное программирование и LLM.md`
+- `/Literate Programming/Влияние статьи “Literate Programming” и системы WEB на вычислительную практику и программную инженерию.md`
 
 2. Research source folder:
-- `at-work/Статья2/Literate Programming/*`
+- `/Literate Programming/*`
 
 3. Companion implementation docs:
-- `at-work/Статья2/Literate-Companion-Implementations/README.md`
-- `at-work/Статья2/Literate-Companion-Implementations/examples/en/README.md`
-- `at-work/Статья2/Literate-Companion-Implementations/examples/ru/README.md`
+- `/Literate-Companion-Implementations/README.md`
+- `/Literate-Companion-Implementations/examples/en/README.md`
+- `/Literate-Companion-Implementations/examples/ru/README.md`
 - all `examples/en/*/COMPANION.md` and `examples/ru/*/COMPANION.md` for:
   - `01-cweb`
   - `02-noweb-like`
@@ -24,7 +24,7 @@
   - `06-rmarkdown`
 
 4. Existing bibliography/build-pipeline examples (format model only):
-- `at-work/Статья2/Primer/01-Language as Infection - Media Communication as a Mechanism of Harm/authors.yml`
+- `/Primer/01-Language as Infection - Media Communication as a Mechanism of Harm/authors.yml`
 
 ## 2) Proposed bibliography sections
 

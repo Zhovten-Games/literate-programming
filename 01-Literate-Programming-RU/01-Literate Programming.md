@@ -30,7 +30,7 @@ zg_bibliography_sections:
 zg_doi: "10.5281/zenodo.20608559"
 ---
 
-## Методологическая рамка обзора
+# Методологическая рамка обзора
 
 Широкий спектр затрагиваемых вопросов не случаен. Статья Дональда Кнута — не узкая документация к системе WEB, а методологический текст практикующего программиста, который выступает одновременно как инженер и идеолог профессии. Обсуждая конкретный инструмент, Кнут затрагивает устройство программы, порядок её объяснения, стиль, переносимость, стоимость разработки, публикацию кода и будущую форму программных сред. Поэтому современный комментарий к этой работе неизбежно выходит за пределы реконструкции WEB и требует сопоставления нескольких инженерных линий.
 
@@ -40,9 +40,9 @@ zg_doi: "10.5281/zenodo.20608559"
 
 Такое сопоставление соответствует логике, которую сам Дональд Кнут описывает в разделе Related Work: сила WEB состояла не в изобретении каждого элемента по отдельности, а в соединении уже существовавших идей в целостный рабочий метод.
 
-## Оглавление
+# Оглавление
 
-### Основная статья
+## Основная статья
 
 * **Вступление** — историческая постановка проблемы, рамка сравнения и обоснование современного remaster-подхода.
 * **A. Introduction** — смена адресата программирования: от инструктажа машины к объяснению человеку.
@@ -58,17 +58,17 @@ zg_doi: "10.5281/zenodo.20608559"
 * **N. Retrospect and Prospects** — ретроспективная оценка и перспективы метода.
 * **Выводы 1–5** — что в идее Кнута сохраняется буквально, что смещается в reproducible research и notebook-среды, а что заново проявляется в LLM-assisted workflow.
 
-### Навигация по репозиторию
+## Навигация по репозиторию
 
-#### Канонический источник статьи
+### Канонический источник статьи
 
 - публичный корень репозитория: `https://github.com/Zhovten-Games/literate-programming`;
-- canonical source обзора: `01-Literate Programming Дональд Кнут, WEB и современные рабочие процессы/Literate Programming - Дональд Кнут, WEB и современные рабочие процессы.md`;
-- файл авторских метаданных: `01-Literate Programming Дональд Кнут, WEB и современные рабочие процессы/authors.yml`;
-- инвентарный слой библиографии: `01-Literate Programming Дональд Кнут, WEB и современные рабочие процессы/Bibliography/Original.md`;
-- sectioned bibliography JSON: `01-Literate Programming Дональд Кнут, WEB и современные рабочие процессы/Bibliography/*.json`.
+- canonical source обзора: `01-Literate-Programming-RU/Literate Programming.md`;
+- файл авторских метаданных: `01-Literate-Programming-RU/authors.yml`;
+- инвентарный слой библиографии: `01-Literate-Programming-RU/Bibliography/Original.md`;
+- sectioned bibliography JSON: `01-Literate-Programming-RU/Bibliography/*.json`.
 
-#### Companion-набор
+### Companion-набор
 
 - корень companion-набора: `02-Literate-Companion-Implementations/`;
 - общий README companion-набора: `02-Literate-Companion-Implementations/README.md`;
@@ -76,7 +76,7 @@ zg_doi: "10.5281/zenodo.20608559"
 - английская ветка примеров: `02-Literate-Companion-Implementations/examples/en/`;
 - русская ветка примеров: `02-Literate-Companion-Implementations/examples/ru/`.
 
-#### Детерминированные companion-примеры 01–06
+### Детерминированные companion-примеры 01–06
 
 - `01-cweb` — более канонический CWEB-маршрут с явной двухветочной моделью `tangle / weave`;
 - `02-noweb-like` — основной облегчённый C++ remaster, ориентированный на `tangle-first workflow`;
@@ -85,7 +85,7 @@ zg_doi: "10.5281/zenodo.20608559"
 - `05-jupyter` — notebook-маршрут с отдельным вниманием к выполнению, скрытому состоянию и reproducible execution;
 - `06-rmarkdown` — reproducible report workflow на R Markdown / knitr / Pandoc.
 
-#### Prompt-Literate Workflow и LLM-граничный пример
+### Prompt-Literate Workflow и LLM-граничный пример
 
 - публичный репозиторий методологии Prompt-Literate Workflow:
   `https://github.com/IRONCREED/prompt-literate-workflow`;
@@ -98,7 +98,7 @@ zg_doi: "10.5281/zenodo.20608559"
   `02-Literate-Companion-Implementations/methodology/extensions/primes-example/`;
 - `07-prompt-literate` — демонстрационное применение Prompt-Literate Workflow (PLW) к примеру с простыми числами, а не определение самого метода.
 
-#### Рабочие файлы внутри `07-prompt-literate`
+### Рабочие файлы внутри `07-prompt-literate`
 
 - `COMPANION.md` — входная точка companion-примера;
 - `primes.plan.md` — human-authored plan и canonical source для prompt-literate примера;
@@ -697,3 +697,6 @@ GDD source
 Literate programming действительно нужен не везде. Но там, где понимание является частью производства, его центральная идея остаётся актуальной: сначала построить объяснительный источник, затем получить из него машинные и человеческие представления, а не пытаться реконструировать смысл после того, как код уже возник.
 
 [^gdd]: Game design document, или GDD, — проектный документ игры, связывающий замысел, правила, контент, системы и будущую реализацию.
+
+## Библография
+<!-- ZG_BIBLIOGRAPHY_SECTIONS -->

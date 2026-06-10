@@ -14,8 +14,7 @@ The companion suite remasters Knuth’s prime-number example through several det
 
 ## Read the Article
 
-* [English article source](01-Literate Programming - Knuth WEB and Contemporary Workflows/01-Literate Programming - Knuth WEB and Contemporary Workflows.md)
-* [Russian article source](01-Literate Programming Дональд Кнут, WEB и современные рабочие процессы/Literate Programming - Дональд Кнут, WEB и современные рабочие процессы.md)
+* [https://zenodo.org/records/20608559?preview_file=01-Literate+Programming+-+Donald+Knuth%2C+WEB%2C+and+Contemporary+Workflows.pdf](Literate Programming: Donald Knuth, WEB, and Contemporary Workflows)
 
 ## Article Map
 
@@ -112,45 +111,5 @@ Companion-набор переносит пример Кнута с просты�
 
 ## Читать статью
 
-* [Английская версия](01-Literate Programming - Knuth WEB and Contemporary Workflows/01-Literate Programming - Knuth WEB and Contemporary Workflows.md)
-* [Русская версия](01-Literate Programming Дональд Кнут, WEB и современные рабочие процессы/Literate Programming - Дональд Кнут, WEB и современные рабочие процессы.md)
-
-## Карта статьи
-
-### Основная статья
-
-* **Вступление** — историческая постановка проблемы, рамка сравнения и обоснование современного remaster-подхода.
-* **A. Introduction** — смена адресата программирования: от инструктажа машины к объяснению человеку.
-* **B. The WEB System** — WEB как система, порождающая человеческую и машинную проекции из одного источника.
-* **C–F. Example / source / tangle / weave** — пример Кнута с простыми числами, исходный WEB-файл, TANGLE, WEAVE и облегчённый C++-ремастер.
-* **G. Additional Bells and Whistles** — переход от учебного примера к производственной сложности.
-* **H. Occam’s Razor** — ограничение инструмента и необходимость методологической сдержанности.
-* **I. Portability** — переносимость за пределы исходной пары TeX / Pascal и современная роль воспроизводимых окружений.
-* **J. Programs as Webs** — программы как сети именованных фрагментов, зависимостей и объяснительных связей.
-* **K. Stylistic Issues** — именование секций, читаемая структура и инженерная роль стиля.
-* **L. Economic Issues** — цена и выгоды literate-дисциплины.
-* **M. Related Work** — structured programming, документационные системы, executable documents и смежные линии.
-* **N. Retrospect and Prospects** — ретроспективная оценка метода и его перспективы.
-
-### Выводы
-
-* **1. Что именно предложил Дональд Кнут**
-* **2. Что сохранилось, а что сменило форму**
-* **3. Цена метода и границы применимости**
-* **4. LLM: продолжение идеи или новая форма разрыва**
-* **5. Где идея может работать дальше**
-
-## Companion-набор
-
-[Companion-набор](02-Literate-Companion-Implementations/README.md) включает воспроизводимые примеры:
-
-* `01-cweb` — канонический CWEB-маршрут с ветками `tangle / weave`;
-* `02-noweb-like` — основной облегчённый C++-ремастер с `tangle-first workflow`;
-* `03-org-babel` — plain-text workflow в Org-mode / Emacs;
-* `04-quarto` — executable-document маршрут для computational publishing;
-* `05-jupyter` — notebook-маршрут с вниманием к hidden state и воспроизводимому выполнению;
-* `06-rmarkdown` — reproducible-report workflow на R Markdown / knitr / Pandoc;
-* `07-prompt-literate` — граничный пример применения Prompt-Literate Workflow к задаче Кнута о простых числах.
-
-Детерминированные примеры и LLM-граничный пример намеренно разделены. Вывод LLM рассматривается как кандидатный артефакт, требующий review, tests, smoke-check и TRACE, а не как детерминированный build artifact.
+* [https://zenodo.org/records/20608559?preview_file=01-Literate+Programming+-+%D0%94%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%B4+%D0%9A%D0%BD%D1%83%D1%82%2C+WEB+%D0%B8+%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B.pdf](Literate Programming: Дональд Кнут, WEB и современные рабочие процессы)
 </details>

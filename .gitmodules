@@ -1,3 +1,6 @@
 [submodule "prompt-literate-workflow"]
 	path = prompt-literate-workflow
 	url = https://github.com/IRONCREED/prompt-literate-workflow.git
+[submodule ".licensing-policy"]
+	path = .licensing-policy
+	url = https://github.com/FOP-Oksana-Dubinetska/repository-licensing-policy.git

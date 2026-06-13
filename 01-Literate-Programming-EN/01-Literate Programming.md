@@ -30,6 +30,8 @@ zg_bibliography_sections:
 zg_doi: "10.5281/zenodo.20608559"
 ---
 
+*Independent methodological review / Preprint / Not peer reviewed.*
+
 # Methodological Framework of the Review
 
 The breadth of the issues addressed is not accidental. Donald Knuth’s article is not narrowly focused documentation for the WEB system, but a methodological text written by a practising programmer who speaks simultaneously as an engineer and as a theorist of the profession. In discussing a specific tool, Knuth addresses the structure of a program, the order in which it should be explained, style, portability, development costs, the publication of code, and the future form of programming environments. Any contemporary commentary on this work therefore inevitably extends beyond the reconstruction of WEB and requires several engineering lineages to be compared.

@@ -69,7 +69,7 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
 ### Canonical Source of the Article
 
 * public repository root: `https://github.com/Zhovten-Games/literate-programming`;
-* canonical source of the review: `01-Literate-Programming-EN/01-Literate Programming.md`;
+* canonical source of the review: `01-Literate-Programming-EN/01-Literate-Programming.md`;
 * author metadata file: `01-Literate-Programming-EN/authors.yml`;
 * bibliography inventory layer: `01-Literate-Programming-EN/Bibliography/Original.md`;
 * sectioned bibliography JSON: `01-Literate-Programming-EN/Bibliography/*.json`.
@@ -97,6 +97,8 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
 
 * public repository for the Prompt-Literate Workflow methodology:
   `https://github.com/IRONCREED/prompt-literate-workflow`;
+* A citable archived release is available through Zenodo:
+  `https://doi.org/10.5281/zenodo.20683969`;
 * role: a reusable methodology repository and GitHub template repository;
 * integration in `literate-programming`: a root submodule/scaffold mounted at
   `prompt-literate-workflow/`;

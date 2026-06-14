@@ -45,12 +45,12 @@ The companion suite remasters Knuth’s prime-number example through several det
 
 ```text
 .
-├── 01-Literate Programming - Knuth WEB and Contemporary Workflows/
-│   ├── 01-Literate Programming - Knuth WEB and Contemporary Workflows.md
+├── 01-Literate-Programming-EN/
+│   ├── 01-Literate-Programming.md
 │   ├── authors.yml
 │   └── Bibliography/
-├── 01-Literate Programming Дональд Кнут, WEB и современные рабочие процессы/
-│   ├── Literate Programming - Дональд Кнут, WEB и современные рабочие процессы.md
+├── 01-Literate-Programming-RU/
+│   ├── 01-Literate-Programming.md
 │   ├── authors.yml
 │   └── Bibliography/
 ├── 02-Literate-Companion-Implementations/

@@ -66,56 +66,58 @@ zg_doi: "10.5281/zenodo.20608559"
 
 ### Канонический источник статьи
 
-- публичный корень репозитория: `https://github.com/Zhovten-Games/literate-programming`;
-- canonical source обзора: `01-Literate-Programming-RU/Literate Programming.md`;
-- файл авторских метаданных: `01-Literate-Programming-RU/authors.yml`;
-- инвентарный слой библиографии: `01-Literate-Programming-RU/Bibliography/Original.md`;
-- sectioned bibliography JSON: `01-Literate-Programming-RU/Bibliography/*.json`.
+* публичный корень репозитория: `https://github.com/Zhovten-Games/literate-programming`;
+* canonical source обзора: `01-Literate-Programming-RU/Literate-Programming.md`;
+* файл авторских метаданных: `01-Literate-Programming-RU/authors.yml`;
+* инвентарный слой библиографии: `01-Literate-Programming-RU/Bibliography/Original.md`;
+* sectioned bibliography JSON: `01-Literate-Programming-RU/Bibliography/*.json`.
 
 ### Companion-набор
 
-- корень companion-набора: `02-Literate-Companion-Implementations/`;
-- общий README companion-набора: `02-Literate-Companion-Implementations/README.md`;
-- Makefile для проверочных запусков: `02-Literate-Companion-Implementations/Makefile`;
-- английская ветка примеров: `02-Literate-Companion-Implementations/examples/en/`;
-- русская ветка примеров: `02-Literate-Companion-Implementations/examples/ru/`.
+* корень companion-набора: `02-Literate-Companion-Implementations/`;
+* общий README companion-набора: `02-Literate-Companion-Implementations/README.md`;
+* Makefile для проверочных запусков: `02-Literate-Companion-Implementations/Makefile`;
+* английская ветка примеров: `02-Literate-Companion-Implementations/examples/en/`;
+* русская ветка примеров: `02-Literate-Companion-Implementations/examples/ru/`.
 
 ### Детерминированные companion-примеры 01–06
 
-- `01-cweb` — более канонический CWEB-маршрут с явной двухветочной моделью `tangle / weave`;
-- `02-noweb-like` — основной облегчённый C++ remaster, ориентированный на `tangle-first workflow`;
-- `03-org-babel` — plain-text literate workflow в Org-mode / Emacs-среде с tangling;
-- `04-quarto` — executable-document маршрут для публикационного HTML / computational publishing;
-- `05-jupyter` — notebook-маршрут с отдельным вниманием к выполнению, скрытому состоянию и reproducible execution;
-- `06-rmarkdown` — reproducible report workflow на R Markdown / knitr / Pandoc.
+* `01-cweb` — более канонический CWEB-маршрут с явной двухветочной моделью `tangle / weave`;
+* `02-noweb-like` — основной облегчённый C++ remaster, ориентированный на `tangle-first workflow`;
+* `03-org-babel` — plain-text literate workflow в Org-mode / Emacs-среде с tangling;
+* `04-quarto` — executable-document маршрут для публикационного HTML / computational publishing;
+* `05-jupyter` — notebook-маршрут с отдельным вниманием к выполнению, скрытому состоянию и reproducible execution;
+* `06-rmarkdown` — reproducible report workflow на R Markdown / knitr / Pandoc.
 
 \newpage
 
 ### Prompt-Literate Workflow и LLM-граничный пример
 
-- публичный репозиторий методологии Prompt-Literate Workflow:
+* публичный репозиторий методологии Prompt-Literate Workflow:
   `https://github.com/IRONCREED/prompt-literate-workflow`;
-- роль: переиспользуемый репозиторий методологии и GitHub template repository;
-- интеграция в `literate-programming`: подключённый submodule/scaffold в корне репозитория
+* цитируемая архивная версия доступна через Zenodo:
+  `https://doi.org/10.5281/zenodo.20683969`;
+* роль: переиспользуемый репозиторий методологии и GitHub template repository;
+* интеграция в `literate-programming`: подключённый submodule/scaffold в корне репозитория
   `prompt-literate-workflow/`;
-- путь методологии, используемый companion-примерами:
+* путь методологии, используемый companion-примерами:
   `02-Literate-Companion-Implementations/methodology/prompt-literate-workflow/`;
-- локальная специализация статьи для задачи Кнута о простых числах:
+* локальная специализация статьи для задачи Кнута о простых числах:
   `02-Literate-Companion-Implementations/methodology/extensions/primes-example/`;
-- `07-prompt-literate` — демонстрационное применение Prompt-Literate Workflow (PLW) к примеру с простыми числами, а не определение самого метода.
+* `07-prompt-literate` — демонстрационное применение Prompt-Literate Workflow (PLW) к примеру с простыми числами, а не определение самого метода.
 
 ### Рабочие файлы внутри `07-prompt-literate`
 
-- `COMPANION.md` — входная точка companion-примера;
-- `primes.plan.md` — human-authored plan и canonical source для prompt-literate примера;
-- `CONTRACTS.md` — контракты чанков для prime-number task;
-- `SCENARIOS.md` — сценарии проверки и критерии принятия;
-- `prompts/fill-chunks.prompt.md` — bounded prompt для заполнения только разрешённых `LLM-TODO` чанков;
-- `prompts/review-generated-code.prompt.md` — prompt для review, а не для переписывания архитектуры;
-- `generated/.gitkeep` — пустой каталог для будущего принятого generated artifact;
-- `tests/smoke-check.sh` — проверка принятого generated-кода;
-- `output.expected.txt` — ожидаемые маркеры вывода;
-- `TRACE.md` — журнал модели, prompt-run, review, ручных правок, проверки и решения о принятии.
+* `COMPANION.md` — входная точка companion-примера;
+* `primes.plan.md` — human-authored plan и canonical source для prompt-literate примера;
+* `CONTRACTS.md` — контракты чанков для prime-number task;
+* `SCENARIOS.md` — сценарии проверки и критерии принятия;
+* `prompts/fill-chunks.prompt.md` — bounded prompt для заполнения только разрешённых `LLM-TODO` чанков;
+* `prompts/review-generated-code.prompt.md` — prompt для review, а не для переписывания архитектуры;
+* `generated/.gitkeep` — пустой каталог для будущего принятого generated artifact;
+* `tests/smoke-check.sh` — проверка принятого generated-кода;
+* `output.expected.txt` — ожидаемые маркеры вывода;
+* `TRACE.md` — журнал модели, prompt-run, review, ручных правок, проверки и решения о принятии.
 
 \newpage
 

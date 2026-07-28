@@ -728,5 +728,5 @@ Literate programming действительно нужен не везде. Но
 
 \newpage
 
-# Библография
+# Библиография
 <!-- ZG_BIBLIOGRAPHY_SECTIONS -->

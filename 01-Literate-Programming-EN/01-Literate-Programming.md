@@ -27,10 +27,10 @@ zg_bibliography_sections:
   - title: "E. Governance / provenance (contextual)"
     bibliography: "Bibliography/Governance and Provenance.json"
     level: 3
-zg_doi: "10.5281/zenodo.20608559"
+zg_doi: "10.5281/zenodo.20608558"
 ---
 
-*Independent methodological review / Preprint / Not peer reviewed.*
+*Document type: independent methodological review. Publication status: preprint. Peer-review status: not peer reviewed.*
 
 # Methodological Framework of the Review
 
@@ -164,7 +164,7 @@ In the second section, Donald Knuth demonstrates that *literate programming* is 
 
 Donald Knuth proposes that a complex program should be understood as a network of simple parts and the relationships between them.
 
-**It is useful here to distinguish three terms:**
+**It is useful here to distinguish three terms**:
 
 * **WEB** — from the English word *web* (a network or interwoven structure). In Donald Knuth’s model, a program is a network of named sections and relationships between them, rather than merely a linear file.
 * **TANGLE** — from the verb *to tangle* (to intertwine or rearrange into a machine-oriented order). The utility assembles the compiler-oriented source code of the program.
@@ -205,7 +205,7 @@ Section D presents the original `PRIMES.WEB`, that is, the material written dire
 
 In our remaster equivalent, `primes.nw` serves as the source of truth.
 
-**noweb chunk markers and syntax:**
+**noweb chunk markers and syntax**:
 
 * `<<program>>=` defines a named chunk called `program`.
 * `<<name>>` refers to another named chunk.

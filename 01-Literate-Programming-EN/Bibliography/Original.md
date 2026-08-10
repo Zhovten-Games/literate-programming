@@ -1,6 +1,6 @@
 # Bibliography inventory (Goal 1)
 
-## 1) Scanned source zones
+## 1. Scanned source zones
 
 1. Main article and drafts:
 - `/Обзор статьи Кнута.md`
@@ -26,7 +26,7 @@
 4. Existing bibliography/build-pipeline examples (format model only):
 - `/Primer/01-Language as Infection - Media Communication as a Mechanism of Harm/authors.yml`
 
-## 2) Proposed bibliography sections
+## 2. Proposed bibliography sections
 
 A. Primary Knuth / WEB / CWEB sources  
 B. Direct literate-programming tools and descendants  
@@ -36,7 +36,7 @@ E. LLM / vibe coding / AI-assisted programming
 F. AI governance / standards / provenance  
 G. Build and publishing pipeline references
 
-## 3) Raw source candidates and proposed keys
+## 3. Raw source candidates and proposed keys
 
 ### A. Primary Knuth / WEB / CWEB
 - `knuth1984a` — Donald E. Knuth, "Literate Programming" (The Computer Journal / DOI record). URL: TODO DOI URL verification.
@@ -83,34 +83,34 @@ G. Build and publishing pipeline references
 - `pandocCiteproc` — Pandoc citations pipeline docs. URL: TODO.
 - `cslSpec` — CSL reference. URL: TODO.
 
-## 4) Duplicate candidates
+## 4. Duplicate candidates
 - `https://www-cs-faculty.stanford.edu/~knuth/cweb.html` appears in multiple companion files; keep one canonical entry `knuth1992a`.
 - `https://nbconvert.readthedocs.io/` and execute API subpage should remain separate entries.
 - R Markdown docs and render reference are related but non-duplicates.
 
-## 5) Excluded as topic sources (pipeline examples only)
+## 5. Excluded as topic sources (pipeline examples only)
 - ZG horror/media bibliography JSON files from "Language as Infection" folder are excluded from Knuth-topic bibliography.
 - `Primer/.../authors.yml` is used only as structure model, not as topic source.
 
-## 6) TODO metadata checklist
+## 6. TODO metadata checklist
 - Verify secondary publication metadata fields for Knuth 1984 article beyond DOI/URL (DOI and stable URL were added).
 - Verify official WEB page URL and archival stability.
 - Collect Quarto official docs URL from companion materials.
 - Add precise publication years for tool docs where meaningful.
 - Confirm governance/provenance links only if they are actually cited in final conclusion.
 
-## 7) Which sources should become JSON entries later
+## 7. Which sources should become JSON entries later
 - All A/B/C high-confidence external sources.
 - E/F only if corresponding conclusion sections remain in article scope.
 - D internal sources should be kept as clearly marked project/internal references.
 
-## 8) Scaffold status note (Goal 1.1)
+## 8. Scaffold status note (Goal 1.1)
 - Draft JSON bibliography files were intentionally deferred and removed at this stage.
 - They will be recreated during the final bibliography wiring step from approved inventory data.
 - `Original.md` is the current inventory source of truth for bibliography planning.
 - The final PDF/build pipeline will use the external `zg-journal-template`, not a custom local build pipeline inside this folder.
 
-## 9) Goal 8 status
+## 9. Goal 8 status
 - Sectioned bibliography JSON files were recreated from high-confidence inventory entries.
 - Uncertain metadata remains marked as `TODO` and was not invented.
 - `openaiCustomInstructions` was replaced by VS Code / GitHub Copilot customization references for LLM customization claims.

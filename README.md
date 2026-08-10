@@ -14,7 +14,7 @@ The companion suite remasters Knuth’s prime-number example through several det
 
 ## Read the Article
 
-* [Literate Programming: Donald Knuth, WEB, and Contemporary Workflows](https://zenodo.org/records/20608559?preview_file=01-Literate+Programming+-+Donald+Knuth%2C+WEB%2C+and+Contemporary+Workflows.pdf)
+* [Literate Programming: Donald Knuth, WEB, and Contemporary Workflows](https://doi.org/10.5281/zenodo.20608558)
 
 ## Article Map
 
@@ -111,5 +111,5 @@ Companion-набор переносит пример Кнута с просты�
 
 ## Читать статью
 
-* [Literate Programming: Дональд Кнут, WEB и современные рабочие процессы](https://zenodo.org/records/20608559?preview_file=01-Literate+Programming+-+%D0%94%D0%BE%D0%BD%D0%B0%D0%BB%D1%8C%D0%B4+%D0%9A%D0%BD%D1%83%D1%82%2C+WEB+%D0%B8+%D1%81%D0%BE%D0%B2%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5+%D1%80%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5+%D0%BF%D1%80%D0%BE%D1%86%D0%B5%D1%81%D1%81%D1%8B.pdf)
+* [Literate Programming: Дональд Кнут, WEB и современные рабочие процессы](https://doi.org/10.5281/zenodo.20608558)
 </details>

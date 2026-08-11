@@ -62,7 +62,7 @@ Expected smoke-check markers:
 
 Note: rendered R console output in HTML can be prefixed with `##` by `knitr`. This is normal.
 
-Manual test route was executed in both language branches (`examples/ru/06-rmarkdown`, `examples/en/06-rmarkdown`) and render checks passed.
+The Ukrainian branch is included in the same render route and locale validation; run its documented render command to record publication evidence. Recorded manual render checks currently cover `examples/en/06-rmarkdown` and `examples/ru/06-rmarkdown`.
 
 Observed successful versions during manual test:
 

@@ -1,0 +1,82 @@
+* Таблиця простих чисел з Org Babel і noweb-посиланнями
+
+#+name: constants
+#+begin_src cpp
+constexpr std::size_t PRIME_COUNT = 1000;
+constexpr std::size_t ROWS_PER_PAGE = 50;
+constexpr std::size_t COLUMNS_PER_PAGE = 4;
+constexpr int COLUMN_WIDTH = 10;
+#+end_src
+
+#+name: types
+#+begin_src cpp
+using PrimeTable = std::vector<int>;
+#+end_src
+
+#+name: declarations
+#+begin_src cpp
+PrimeTable generate_primes(std::size_t count);
+bool is_prime_candidate(int candidate, const PrimeTable& primes);
+void print_table(const PrimeTable& primes);
+#+end_src
+
+#+name: prime-generation
+#+begin_src cpp
+PrimeTable generate_primes(std::size_t count) {
+  PrimeTable primes;
+  if (count == 0) return primes;
+  primes.push_back(2);
+  for (int candidate = 3; primes.size() < count; candidate += 2) {
+    if (is_prime_candidate(candidate, primes)) primes.push_back(candidate);
+  }
+  return primes;
+}
+
+bool is_prime_candidate(int candidate, const PrimeTable& primes) {
+  for (int p : primes) {
+    if (p > candidate / p) return true;
+    if (candidate % p == 0) return false;
+  }
+  return true;
+}
+#+end_src
+
+#+name: table-output
+#+begin_src cpp
+void print_table(const PrimeTable& primes) {
+  std::size_t page_number = 1;
+  std::size_t page_offset = 0;
+  while (page_offset < primes.size()) {
+    std::cout << "The First " << primes.size() << " Prime Numbers --- Page " << page_number << "\n\n";
+    for (std::size_t row = 0; row < ROWS_PER_PAGE; ++row) {
+      for (std::size_t column = 0; column < COLUMNS_PER_PAGE; ++column) {
+        const std::size_t index = page_offset + row + column * ROWS_PER_PAGE;
+        if (index < primes.size()) std::cout << std::setw(COLUMN_WIDTH) << primes[index];
+      }
+      std::cout << '\n';
+    }
+    std::cout << '\n';
+    ++page_number;
+    page_offset += ROWS_PER_PAGE * COLUMNS_PER_PAGE;
+  }
+}
+#+end_src
+
+#+begin_src cpp :tangle primes.cpp :noweb yes
+#include <cstddef>
+#include <iomanip>
+#include <iostream>
+#include <vector>
+
+<<constants>>
+<<types>>
+<<declarations>>
+<<prime-generation>>
+<<table-output>>
+
+int main() {
+  const auto primes = generate_primes(PRIME_COUNT);
+  print_table(primes);
+  return 0;
+}
+#+end_src

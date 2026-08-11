@@ -16,6 +16,12 @@ The companion suite remasters Knuth’s prime-number example through several det
 
 * [Literate Programming: Donald Knuth, WEB, and Contemporary Workflows](https://doi.org/10.5281/zenodo.20608558)
 
+### Repository Sources
+
+* [English](01-Literate-Programming-EN/01-Literate-Programming.md)
+* [Українська](01-Literate-Programming-UK/01-Literate-Programming.md)
+* [Русская](01-Literate-Programming-RU/01-Literate-Programming.md)
+
 ## Article Map
 
 ### Main Article
@@ -49,6 +55,10 @@ The companion suite remasters Knuth’s prime-number example through several det
 │   ├── 01-Literate-Programming.md
 │   ├── authors.yml
 │   └── Bibliography/
+├── 01-Literate-Programming-UK/
+│   ├── 01-Literate-Programming.md
+│   ├── authors.yml
+│   └── Bibliography/
 ├── 01-Literate-Programming-RU/
 │   ├── 01-Literate-Programming.md
 │   ├── authors.yml
@@ -56,7 +66,7 @@ The companion suite remasters Knuth’s prime-number example through several det
 ├── 02-Literate-Companion-Implementations/
 │   ├── README.md
 │   ├── Makefile
-│   ├── examples/
+│   ├── examples/{en,uk,ru}/
 │   └── methodology/
 └── prompt-literate-workflow/
 ```
@@ -75,6 +85,8 @@ The [companion suite](02-Literate-Companion-Implementations/README.md) provides 
 
 The deterministic examples and the LLM boundary example are intentionally separated. LLM-generated output is treated as a candidate artifact requiring review, tests, smoke-checks, and traceability rather than as a deterministic build artifact.
 
+The localized companion branches are available in `examples/en/`, `examples/uk/`, and `examples/ru/`. Each Ukrainian localization mirrors an existing Russian localized file; methodology and control artifacts that existed only in English remain English-only.
+
 ## Prompt-Literate Workflow
 
 The repository includes [Prompt-Literate Workflow](https://github.com/IRONCREED/prompt-literate-workflow) as a pinned Git submodule.
@@ -91,6 +103,28 @@ human-authored literate plan
   → TRACE
   → accepted update to canonical source
 ```
+
+<details>
+<summary><strong>Українська версія</strong></summary>
+
+# Literate Programming: Дональд Кнут, WEB і сучасні робочі процеси
+
+Цей репозиторій супроводжує методологічний огляд статті Дональда Кнута *Literate Programming*, опублікованої 1984 року.
+
+Кнут запропонував писати програми передусім для людського читання і лише потім перетворювати їх на форму, придатну до машинного виконання. Огляд реконструює цю аргументацію через систему WEB і розглядає, як її центральний принцип виявляється у сучасних інженерних практиках.
+
+У репозиторії розмежовано:
+
+* прямі або історично близькі продовження, як-от CWEB і noweb;
+* інструментально споріднені практики, як-от Org Babel;
+* ширші смислові асоціації, пов’язані з executable documents, відтворюваними середовищами, IDE-навігацією, context maps і LLM-assisted розробкою.
+
+Companion-набір переносить приклад Кнута з простими числами до кількох детермінованих workflow і вводить Prompt-Literate Workflow як керований граничний приклад імовірнісної генерації.
+
+## Читати статтю
+
+* [Literate Programming: Дональд Кнут, WEB і сучасні робочі процеси](https://doi.org/10.5281/zenodo.20608558)
+</details>
 
 <details>
 <summary><strong>Русская версия</strong></summary>

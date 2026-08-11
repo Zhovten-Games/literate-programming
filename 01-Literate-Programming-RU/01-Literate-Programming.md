@@ -67,7 +67,7 @@ zg_doi: "10.5281/zenodo.20608558"
 ### Канонический источник статьи
 
 * публичный корень репозитория: `https://github.com/Zhovten-Games/literate-programming`;
-* canonical source обзора: `01-Literate-Programming-RU/Literate-Programming.md`;
+* canonical source обзора: `01-Literate-Programming-RU/01-Literate-Programming.md`;
 * файл авторских метаданных: `01-Literate-Programming-RU/authors.yml`;
 * инвентарный слой библиографии: `01-Literate-Programming-RU/Bibliography/Original.md`;
 * sectioned bibliography JSON: `01-Literate-Programming-RU/Bibliography/*.json`.
@@ -78,6 +78,7 @@ zg_doi: "10.5281/zenodo.20608558"
 * общий README companion-набора: `02-Literate-Companion-Implementations/README.md`;
 * Makefile для проверочных запусков: `02-Literate-Companion-Implementations/Makefile`;
 * английская ветка примеров: `02-Literate-Companion-Implementations/examples/en/`;
+* украинская ветка примеров: `02-Literate-Companion-Implementations/examples/uk/`;
 * русская ветка примеров: `02-Literate-Companion-Implementations/examples/ru/`.
 
 ### Детерминированные companion-примеры 01–06

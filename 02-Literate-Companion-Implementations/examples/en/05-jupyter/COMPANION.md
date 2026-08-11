@@ -71,7 +71,7 @@ Expected markers in the executed notebook:
 
 This executes the notebook headlessly and writes `primes.executed.ipynb`, which contains the executed cell outputs.
 
-Manual route coverage: both script and notebook execution checks passed in `examples/ru/05-jupyter` and `examples/en/05-jupyter`.
+The Ukrainian branch is structurally validated and passes the script smoke-check; run the documented `nbconvert --execute` command to record notebook-execution evidence before publication. Recorded manual route coverage currently confirms both script and notebook execution in `examples/en/05-jupyter` and `examples/ru/05-jupyter`.
 
 ## 6. Notebook GUI notes
 
@@ -135,16 +135,22 @@ Expected `which python` shape:
 
 The same root `.venv` can be reused by `04-quarto` and `05-jupyter`.
 
-Test both language branches:
+Test all three language branches:
 
 ```bash
-cd examples/ru/05-jupyter
+cd examples/en/05-jupyter
 python3 primes.py > output.txt
 grep "Page 1" output.txt && grep "Page 5" output.txt && grep "7919" output.txt
 jupyter nbconvert --to notebook --execute primes.ipynb --output primes.executed.ipynb
 grep "Page 1" primes.executed.ipynb && grep "Page 5" primes.executed.ipynb && grep "7919" primes.executed.ipynb
 
-cd ../../en/05-jupyter
+cd ../../uk/05-jupyter
+python3 primes.py > output.txt
+grep "Page 1" output.txt && grep "Page 5" output.txt && grep "7919" output.txt
+jupyter nbconvert --to notebook --execute primes.ipynb --output primes.executed.ipynb
+grep "Page 1" primes.executed.ipynb && grep "Page 5" primes.executed.ipynb && grep "7919" primes.executed.ipynb
+
+cd ../../ru/05-jupyter
 python3 primes.py > output.txt
 grep "Page 1" output.txt && grep "Page 5" output.txt && grep "7919" output.txt
 jupyter nbconvert --to notebook --execute primes.ipynb --output primes.executed.ipynb

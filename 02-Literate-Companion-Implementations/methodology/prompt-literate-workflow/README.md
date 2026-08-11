@@ -28,6 +28,7 @@ human-authored plan
 ## Repository layout
 
 - `methodology/` contains the reusable method and policies.
+- `methodology/METHOD.en.md`, `methodology/METHOD.uk.md`, and `methodology/METHOD.ru.md` provide localized method overviews.
 - `schemas/` contains neutral documentation schemas for project-local use.
 - `starter/` is the neutral starting structure copied into new Prompt-Literate Workflow projects.
 - `scripts/validate-project.py` validates the discipline of a project-local application.

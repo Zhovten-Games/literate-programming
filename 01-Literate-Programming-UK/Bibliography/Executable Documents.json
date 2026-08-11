@@ -1,0 +1,38 @@
+[
+  {
+    "id": "quartoDocs",
+    "type": "webpage",
+    "title": "Quarto Documentation",
+    "URL": "https://quarto.org/docs/"
+  },
+  {
+    "id": "jupyterDocs",
+    "type": "webpage",
+    "title": "Project Jupyter Documentation",
+    "URL": "https://docs.jupyter.org/"
+  },
+  {
+    "id": "nbconvertDocs",
+    "type": "webpage",
+    "title": "nbconvert Documentation",
+    "URL": "https://nbconvert.readthedocs.io/"
+  },
+  {
+    "id": "rmarkdownDocs",
+    "type": "webpage",
+    "title": "R Markdown Documentation",
+    "URL": "https://rmarkdown.rstudio.com/"
+  },
+  {
+    "id": "knitrDocs",
+    "type": "webpage",
+    "title": "knitr",
+    "URL": "https://yihui.org/knitr/"
+  },
+  {
+    "id": "pandocDocs",
+    "type": "webpage",
+    "title": "Pandoc",
+    "URL": "https://pandoc.org/"
+  }
+]

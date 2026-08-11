@@ -62,7 +62,7 @@ grep "Page 1" primes.html && grep "Page 5" primes.html && grep "7919" primes.htm
 
 Примечание: console output R в HTML может иметь префикс `##` от `knitr`. Это нормально.
 
-Маршрут ручного тестирования выполнялся в обеих языковых ветках (`examples/ru/06-rmarkdown`, `examples/en/06-rmarkdown`), и проверки рендера прошли.
+Украинская ветка включена в тот же render-маршрут и locale validation; перед публикацией нужно выполнить документированную команду рендера и зафиксировать evidence. Имеющиеся ручные проверки рендера охватывают `examples/en/06-rmarkdown` и `examples/ru/06-rmarkdown`.
 
 Наблюдавшиеся успешные версии при ручном тесте:
 

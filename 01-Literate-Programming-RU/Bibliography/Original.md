@@ -14,8 +14,9 @@
 3. Companion implementation docs:
 - `/Literate-Companion-Implementations/README.md`
 - `/Literate-Companion-Implementations/examples/en/README.md`
+- `/Literate-Companion-Implementations/examples/uk/README.md`
 - `/Literate-Companion-Implementations/examples/ru/README.md`
-- all `examples/en/*/COMPANION.md` and `examples/ru/*/COMPANION.md` for:
+- all `examples/en/*/COMPANION.md`, `examples/uk/*/COMPANION.md`, and `examples/ru/*/COMPANION.md` for:
   - `01-cweb`
   - `02-noweb-like`
   - `03-org-babel`
@@ -64,9 +65,10 @@ G. Build and publishing pipeline references
 
 ### D. Internal / companion project materials
 - `twocanonCompanionRoot2026` — local companion root README.
+- `twocanonCompanionUk2026` — local companion UK README.
 - `twocanonCompanionRu2026` — local companion RU README.
 - `twocanonCompanionEn2026` — local companion EN README.
-- `twocanonCompanion01cweb2026` ... `twocanonCompanion06rmarkdown2026` — each RU/EN `COMPANION.md` as internal references.
+- `twocanonCompanion01cweb2026` ... `twocanonCompanion06rmarkdown2026` — each EN/UK/RU `COMPANION.md` as internal references.
 
 ### E. LLM / AI-assisted programming
 - `vscodeCopilotCustomInstructions` — VS Code Copilot customization docs. URL: https://code.visualstudio.com/docs/copilot/copilot-customization

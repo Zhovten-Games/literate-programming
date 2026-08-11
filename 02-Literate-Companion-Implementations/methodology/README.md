@@ -20,6 +20,12 @@ The methodology is integrated into `literate-programming` as a root submodule/sc
 
 The reusable mirror must not be edited independently from the source scaffold. Update the source scaffold first, then synchronize this path.
 
+Localized method overviews are available at:
+
+- `prompt-literate-workflow/methodology/METHOD.en.md`;
+- `prompt-literate-workflow/methodology/METHOD.uk.md`;
+- `prompt-literate-workflow/methodology/METHOD.ru.md`.
+
 ## `extensions/`
 
 Article-specific local extensions live under:

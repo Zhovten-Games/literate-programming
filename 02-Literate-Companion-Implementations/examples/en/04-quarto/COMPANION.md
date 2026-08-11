@@ -109,16 +109,20 @@ Expected `which python` shape:
 
 - `.../Literate-Companion-Implementations/.venv/bin/python`
 
-The shared root `.venv` can be reused for both `examples/en/04-quarto` and `examples/ru/04-quarto`.
+The shared root `.venv` can be reused for `examples/en/04-quarto`, `examples/uk/04-quarto`, and `examples/ru/04-quarto`.
 
-Smoke-check both language branches:
+Smoke-check all three language branches:
 
 ```bash
-cd examples/ru/04-quarto
+cd examples/en/04-quarto
 quarto render primes.qmd
 grep "Page 1" primes.html && grep "Page 5" primes.html && grep "7919" primes.html
 
-cd ../../en/04-quarto
+cd ../../uk/04-quarto
+quarto render primes.qmd
+grep "Page 1" primes.html && grep "Page 5" primes.html && grep "7919" primes.html
+
+cd ../../ru/04-quarto
 quarto render primes.qmd
 grep "Page 1" primes.html && grep "Page 5" primes.html && grep "7919" primes.html
 ```

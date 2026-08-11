@@ -80,6 +80,7 @@ This comparison follows the logic that Donald Knuth himself sets out in the Rela
 * shared README for the companion suite: `02-Literate-Companion-Implementations/README.md`;
 * Makefile for verification runs: `02-Literate-Companion-Implementations/Makefile`;
 * English branch of the examples: `02-Literate-Companion-Implementations/examples/en/`;
+* Ukrainian branch of the examples: `02-Literate-Companion-Implementations/examples/uk/`;
 * Russian branch of the examples: `02-Literate-Companion-Implementations/examples/ru/`.
 
 ### Deterministic Companion Examples 01–06

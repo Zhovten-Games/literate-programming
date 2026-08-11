@@ -109,16 +109,20 @@ python -m jupyter --version
 
 - `.../Literate-Companion-Implementations/.venv/bin/python`
 
-Общий `.venv` используется для `examples/en/04-quarto` и `examples/ru/04-quarto` и избавляет от отдельных окружений в каждом языковом каталоге.
+Общий `.venv` используется для `examples/en/04-quarto`, `examples/uk/04-quarto` и `examples/ru/04-quarto` и избавляет от отдельных окружений в каждом языковом каталоге.
 
-Проверка обеих языковых веток:
+Проверка трёх языковых веток:
 
 ```bash
-cd examples/ru/04-quarto
+cd examples/en/04-quarto
 quarto render primes.qmd
 grep "Page 1" primes.html && grep "Page 5" primes.html && grep "7919" primes.html
 
-cd ../../en/04-quarto
+cd ../../uk/04-quarto
+quarto render primes.qmd
+grep "Page 1" primes.html && grep "Page 5" primes.html && grep "7919" primes.html
+
+cd ../../ru/04-quarto
 quarto render primes.qmd
 grep "Page 1" primes.html && grep "Page 5" primes.html && grep "7919" primes.html
 ```

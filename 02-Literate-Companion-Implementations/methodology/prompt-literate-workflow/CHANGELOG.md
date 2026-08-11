@@ -9,3 +9,4 @@ Initial development scaffold for the `v0.1.0` release line.
 - Adds phase-aware TRACE schemas.
 - Adds scenario test-backing status requirements.
 - Adds a neutral starter template and validation script.
+- Adds English, Ukrainian, and Russian localized method overviews.

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "euAiAct",
+    "type": "legislation",
+    "title": "Regulation (EU) 2024/1689 (Artificial Intelligence Act)",
+    "URL": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj"
+  },
+  {
+    "id": "euCodeOfPracticeGpai",
+    "type": "webpage",
+    "title": "General-Purpose AI Code of Practice",
+    "URL": "https://digital-strategy.ec.europa.eu/en/policies/ai-code-practice"
+  },
+  {
+    "id": "c2paSpec",
+    "type": "standard",
+    "title": "C2PA Specification",
+    "URL": "https://c2pa.org/specifications/"
+  }
+]

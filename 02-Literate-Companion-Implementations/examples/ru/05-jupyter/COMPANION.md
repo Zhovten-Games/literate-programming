@@ -71,7 +71,7 @@ grep "Page 1" primes.executed.ipynb && grep "Page 5" primes.executed.ipynb && gr
 
 Эта команда выполняет notebook в headless-режиме и записывает `primes.executed.ipynb` с выводом выполненных ячеек.
 
-Маршрут вручную протестирован в обеих языковых ветках: `examples/ru/05-jupyter` и `examples/en/05-jupyter`.
+Украинская ветка прошла структурную валидацию и script smoke-check; перед публикацией нужно выполнить документированную команду `nbconvert --execute` и зафиксировать notebook-execution evidence. Имеющаяся ручная проверка подтверждает выполнение скрипта и notebook в `examples/en/05-jupyter` и `examples/ru/05-jupyter`.
 
 ## 6. Заметки про GUI notebook
 
@@ -135,16 +135,22 @@ python -m jupyter --version
 
 Одна и та же корневая `.venv` переиспользуется для `04-quarto` и `05-jupyter`.
 
-Проверка обеих языковых веток:
+Проверка трёх языковых веток:
 
 ```bash
-cd examples/ru/05-jupyter
+cd examples/en/05-jupyter
 python3 primes.py > output.txt
 grep "Page 1" output.txt && grep "Page 5" output.txt && grep "7919" output.txt
 jupyter nbconvert --to notebook --execute primes.ipynb --output primes.executed.ipynb
 grep "Page 1" primes.executed.ipynb && grep "Page 5" primes.executed.ipynb && grep "7919" primes.executed.ipynb
 
-cd ../../en/05-jupyter
+cd ../../uk/05-jupyter
+python3 primes.py > output.txt
+grep "Page 1" output.txt && grep "Page 5" output.txt && grep "7919" output.txt
+jupyter nbconvert --to notebook --execute primes.ipynb --output primes.executed.ipynb
+grep "Page 1" primes.executed.ipynb && grep "Page 5" primes.executed.ipynb && grep "7919" primes.executed.ipynb
+
+cd ../../ru/05-jupyter
 python3 primes.py > output.txt
 grep "Page 1" output.txt && grep "Page 5" output.txt && grep "7919" output.txt
 jupyter nbconvert --to notebook --execute primes.ipynb --output primes.executed.ipynb

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ramsey1994a",
+    "type": "webpage",
+    "author": [
+      { "family": "Ramsey", "given": "Norman" }
+    ],
+    "title": "noweb repository",
+    "URL": "https://github.com/nrnrnr/noweb"
+  },
+  {
+    "id": "orgmanualExtractingSourceCode",
+    "type": "webpage",
+    "title": "Org Manual: Extracting Source Code",
+    "URL": "https://orgmode.org/manual/Extracting-Source-Code.html"
+  },
+  {
+    "id": "gnuEmacsDownload",
+    "type": "webpage",
+    "title": "GNU Emacs download",
+    "URL": "https://www.gnu.org/software/emacs/download.html"
+  }
+]

@@ -49,7 +49,7 @@ The reusable methodology is integrated into the `literate-programming` repositor
 Local additive extension for Knuth's prime-number task. It contains prime-specific acceptance markers and validation rules for the article-local `07-prompt-literate` examples.
 
 <details>
-<summary><strong>Русская версия</strong></summary>
+<summary>Русская версия</summary>
 
 - `01-cweb` — для исторического полного WEB/CWEB-механизма.
 - `02-noweb-like` — основной лёгкий C++ literate-programming reboot-пример.
@@ -60,7 +60,7 @@ Local additive extension for Knuth's prime-number task. It contains prime-specif
 </details>
 
 <details>
-<summary><strong>Українська версія</strong></summary>
+<summary>Українська версія</summary>
 
 - `01-cweb` — для історичного повного WEB/CWEB-механізму.
 - `02-noweb-like` — основний легкий C++ literate-programming reboot-приклад.
@@ -71,7 +71,7 @@ Local additive extension for Knuth's prime-number task. It contains prime-specif
 </details>
 
 <details>
-<summary><strong>Беларуская версія</strong></summary>
+<summary>Беларуская версія</summary>
 
 - `01-cweb` — гістарычны поўны WEB/CWEB.
 - `02-noweb-like` — асноўны палегчаны C++-прыклад літаратурнага праграмавання.

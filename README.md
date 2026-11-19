@@ -110,7 +110,7 @@ human-authored literate plan
 ```
 
 <details>
-<summary><strong>Русская версия</strong></summary>
+<summary>Русская версия</summary>
 
 # Literate Programming: Дональд Кнут, WEB и современные рабочие процессы
 
@@ -132,7 +132,7 @@ Companion-набор переносит пример Кнута с просты�
 </details>
 
 <details>
-<summary><strong>Українська версія</strong></summary>
+<summary>Українська версія</summary>
 
 # Literate Programming: Дональд Кнут, WEB і сучасні робочі процеси
 
@@ -154,7 +154,7 @@ Companion-набір переносить приклад Кнута з прос�
 </details>
 
 <details>
-<summary><strong>Беларуская версія</strong></summary>
+<summary>Беларуская версія</summary>
 
 # Літаратурнае праграмаванне: Дональд Кнут, WEB і сучасныя працоўныя працэсы
 

@@ -1,8 +1,9 @@
-# Literate Companion Implementations / Каталог literate-реалізацій / Каталог literate-реализаций
+# Literate Companion Implementations
 
 - `examples/en/` contains the English companion set.
-- `examples/uk/` contains the Ukrainian companion set.
 - `examples/ru/` contains the Russian companion set.
+- `examples/uk/` contains the Ukrainian companion set.
+- `examples/be/` contains the Belarusian companion set.
 - `methodology/` contains reusable workflow methodology definitions and article-local extensions.
 - Variants `01`–`06` solve the same task deterministically: print the first 1000 prime numbers in a 4-column paginated table.
 - `07-prompt-literate` is an article-local boundary example of Prompt-Literate Workflow; it constrains LLM-assisted generation via human-authored plan, chunk contracts, bounded prompts, review, tests, and TRACE.
@@ -11,9 +12,9 @@
   - **org-babel** is a practical plain-text workflow with tangling.
   - **Quarto**, **Jupyter**, and **R Markdown** are executable-document descendants, not strict WEB equivalents.
 
-## Full comparison table / Повна порівняльна таблиця / Полная сравнительная таблица
+## Full comparison table
 
-| Variant / Варіант / Вариант | Main role / Головна роль / Роль              | Strong side / Сильна сторона / Сильная сторона | Main cost / Ціна / Цена                          |
+| Variant | Main role              | Strong side | Main cost                          |
 | --------------------------- | ------------------------------------------------ | ----------------------------------------------- | ------------------------------------------------ |
 | `01-cweb`       | Historical canon                               | Full tangle/weave                          | CWEB/TeX ritual                                  |
 | `02-noweb-like` | Main practical C++ reboot                      | Minimal syntax and ritual                  | Weaker separate document-generation branch       |
@@ -23,25 +24,13 @@
 | `06-rmarkdown`  | Reproducible report                            | Reports and computational documents        | Closer to report workflow than source generation |
 | `07-prompt-literate` | Experimental boundary workflow              | Example of Prompt-Literate Workflow         | Prompt output is not deterministic; validation is controlled       |
 
-## Interpretation / Коротка інтерпретація / Краткая интерпретация
+## Interpretation
 
 - Use `01-cweb` to understand the historical full WEB/CWEB mechanism.
 - Use `02-noweb-like` as the main lightweight C++ literate-programming reboot example.
 - Use `03-org-babel` if Emacs/Org-mode is acceptable as an environment.
 - Use `04-quarto`, `05-jupyter`, or `06-rmarkdown` when the target is executable documents / computational publishing rather than strict WEB-style source generation.
 - Use `07-prompt-literate` to inspect the Prompt-Literate Workflow boundary case where generation is candidate-only until review, evidence, and TRACE.
-
-- `01-cweb` — для історичного повного WEB/CWEB-механізму.
-- `02-noweb-like` — основний легкий C++ literate-programming reboot-приклад.
-- `03-org-babel` — коли Emacs/Org-mode прийнятний як робоче середовище.
-- `04-quarto`, `05-jupyter`, `06-rmarkdown` — коли метою є executable documents / computational publishing, а не строга WEB-style генерація вихідного тексту.
-- `07-prompt-literate` — для граничного випадку Prompt-Literate Workflow, де generated output залишається кандидатом до review, evidence і TRACE.
-
-- `01-cweb` — для исторического полного WEB/CWEB-механизма.
-- `02-noweb-like` — основной лёгкий C++ literate-programming reboot-пример.
-- `03-org-babel` — если Emacs/Org-mode подходит как рабочая среда.
-- `04-quarto`, `05-jupyter`, `06-rmarkdown` — когда цель executable documents / computational publishing, а не строгая WEB-style генерация исходника.
-- `07-prompt-literate` — для граничного случая Prompt-Literate Workflow, где generated output остаётся кандидатом до review, evidence и TRACE.
 
 ## Methodology layers
 
@@ -58,3 +47,36 @@ The reusable methodology is integrated into the `literate-programming` repositor
 ### `methodology/extensions/primes-example/`
 
 Local additive extension for Knuth's prime-number task. It contains prime-specific acceptance markers and validation rules for the article-local `07-prompt-literate` examples.
+
+<details>
+<summary><strong>Русская версия</strong></summary>
+
+- `01-cweb` — для исторического полного WEB/CWEB-механизма.
+- `02-noweb-like` — основной лёгкий C++ literate-programming reboot-пример.
+- `03-org-babel` — если Emacs/Org-mode подходит как рабочая среда.
+- `04-quarto`, `05-jupyter`, `06-rmarkdown` — когда цель executable documents / computational publishing, а не строгая WEB-style генерация исходника.
+- `07-prompt-literate` — для граничного случая Prompt-Literate Workflow, где generated output остаётся кандидатом до review, evidence и TRACE.
+
+</details>
+
+<details>
+<summary><strong>Українська версія</strong></summary>
+
+- `01-cweb` — для історичного повного WEB/CWEB-механізму.
+- `02-noweb-like` — основний легкий C++ literate-programming reboot-приклад.
+- `03-org-babel` — коли Emacs/Org-mode прийнятний як робоче середовище.
+- `04-quarto`, `05-jupyter`, `06-rmarkdown` — коли метою є executable documents / computational publishing, а не строга WEB-style генерація вихідного тексту.
+- `07-prompt-literate` — для граничного випадку Prompt-Literate Workflow, де generated output залишається кандидатом до review, evidence і TRACE.
+
+</details>
+
+<details>
+<summary><strong>Беларуская версія</strong></summary>
+
+- `01-cweb` — гістарычны поўны WEB/CWEB.
+- `02-noweb-like` — асноўны палегчаны C++-прыклад літаратурнага праграмавання.
+- `03-org-babel` — працэс у Emacs/Org-mode.
+- `04-quarto`, `05-jupyter`, `06-rmarkdown` — выканальныя дакументы і вылічальныя публікацыі.
+- `07-prompt-literate` — граничны працэс, дзе згенераваны вынік застаецца кандыдатам да агляду, сведчанняў і TRACE.
+
+</details>

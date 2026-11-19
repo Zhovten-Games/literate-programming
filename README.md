@@ -19,8 +19,9 @@ The companion suite remasters Knuth’s prime-number example through several det
 ### Repository Sources
 
 * [English](01-Literate-Programming-EN/01-Literate-Programming.md)
-* [Українська](01-Literate-Programming-UK/01-Literate-Programming.md)
 * [Русская](01-Literate-Programming-RU/01-Literate-Programming.md)
+* [Українська](01-Literate-Programming-UK/01-Literate-Programming.md)
+* [Беларуская](01-Literate-Programming-BE/01-Literate-Programming.md)
 
 ## Article Map
 
@@ -63,10 +64,14 @@ The companion suite remasters Knuth’s prime-number example through several det
 │   ├── 01-Literate-Programming.md
 │   ├── authors.yml
 │   └── Bibliography/
+├── 01-Literate-Programming-BE/
+│   ├── 01-Literate-Programming.md
+│   ├── authors.yml
+│   └── Bibliography/
 ├── 02-Literate-Companion-Implementations/
 │   ├── README.md
 │   ├── Makefile
-│   ├── examples/{en,uk,ru}/
+│   ├── examples/{en,ru,uk,be}/
 │   └── methodology/
 └── prompt-literate-workflow/
 ```
@@ -85,7 +90,7 @@ The [companion suite](02-Literate-Companion-Implementations/README.md) provides 
 
 The deterministic examples and the LLM boundary example are intentionally separated. LLM-generated output is treated as a candidate artifact requiring review, tests, smoke-checks, and traceability rather than as a deterministic build artifact.
 
-The localized companion branches are available in `examples/en/`, `examples/uk/`, and `examples/ru/`. Each Ukrainian localization mirrors an existing Russian localized file; methodology and control artifacts that existed only in English remain English-only.
+The companion branches are available in `examples/en/`, `examples/ru/`, `examples/uk/`, and `examples/be/`. Technical identifiers, expected program output, and portable prompt templates retain their shared form.
 
 ## Prompt-Literate Workflow
 
@@ -103,6 +108,28 @@ human-authored literate plan
   → TRACE
   → accepted update to canonical source
 ```
+
+<details>
+<summary><strong>Русская версия</strong></summary>
+
+# Literate Programming: Дональд Кнут, WEB и современные рабочие процессы
+
+Этот репозиторий сопровождает методологический обзор статьи Дональда Кнута *Literate Programming*, опубликованной в 1984 году.
+
+Кнут предложил писать программы прежде всего для человеческого чтения и только затем преобразовывать их в машинно-исполняемую форму. Обзор реконструирует эту аргументацию через систему WEB и рассматривает, как её центральный принцип проявляется в современных инженерных практиках.
+
+В репозитории разграничиваются:
+
+* прямые или исторически близкие продолжения, такие как CWEB и noweb;
+* инструментально родственные практики, такие как Org Babel;
+* более широкие смысловые ассоциации, связанные с executable documents, воспроизводимыми окружениями, IDE-навигацией, context maps и LLM-assisted разработкой.
+
+Companion-набор переносит пример Кнута с простыми числами в несколько детерминированных workflow и вводит Prompt-Literate Workflow как управляемый граничный пример вероятностной генерации.
+
+## Читать статью
+
+* [Literate Programming: Дональд Кнут, WEB и современные рабочие процессы](https://doi.org/10.5281/zenodo.20608558)
+</details>
 
 <details>
 <summary><strong>Українська версія</strong></summary>
@@ -127,23 +154,27 @@ Companion-набір переносить приклад Кнута з прос�
 </details>
 
 <details>
-<summary><strong>Русская версия</strong></summary>
+<summary><strong>Беларуская версія</strong></summary>
 
-# Literate Programming: Дональд Кнут, WEB и современные рабочие процессы
+# Літаратурнае праграмаванне: Дональд Кнут, WEB і сучасныя працоўныя працэсы
 
-Этот репозиторий сопровождает методологический обзор статьи Дональда Кнута *Literate Programming*, опубликованной в 1984 году.
+Рэпазіторый суправаджае метадалагічны агляд артыкула Дональда Кнута *Literate Programming* 1984 года. Кнут прапанаваў пісаць праграмы перадусім для чалавечага чытання, пасля ператвараючы іх у выканальную машынную форму. Агляд аднаўляе аргументацыю праз WEB і даследуе яе сучасныя інжынерныя праявы.
 
-Кнут предложил писать программы прежде всего для человеческого чтения и только затем преобразовывать их в машинно-исполняемую форму. Обзор реконструирует эту аргументацию через систему WEB и рассматривает, как её центральный принцип проявляется в современных инженерных практиках.
+Разглядаюцца прамыя або гістарычна блізкія працягі CWEB і noweb, інструментальна роднасны Org Babel і шырэйшыя сувязі з выканальнымі дакументамі, узнаўляльнымі асяроддзямі, IDE-навігацыяй, картамі кантэксту і распрацоўкай з LLM. Набор спадарожных прыкладаў пераносіць задачу простых лікаў Кнута ў некалькі дэтэрмінаваных працэсаў і паказвае Prompt-Literate Workflow як кантраляваны граничны выпадак імавернаснай генерацыі.
 
-В репозитории разграничиваются:
+## Чытаць артыкул
 
-* прямые или исторически близкие продолжения, такие как CWEB и noweb;
-* инструментально родственные практики, такие как Org Babel;
-* более широкие смысловые ассоциации, связанные с executable documents, воспроизводимыми окружениями, IDE-навигацией, context maps и LLM-assisted разработкой.
+- [Публікацыя](https://doi.org/10.5281/zenodo.20608558)
+- [Беларуская крыніца](01-Literate-Programming-BE/01-Literate-Programming.md)
+- [Спадарожныя прыклады](02-Literate-Companion-Implementations/examples/be/README.md)
+- [Агульная табліца параўнання](02-Literate-Companion-Implementations/README.md)
 
-Companion-набор переносит пример Кнута с простыми числами в несколько детерминированных workflow и вводит Prompt-Literate Workflow как управляемый граничный пример вероятностной генерации.
+## Карта артыкула
 
-## Читать статью
+Уводныя заўвагі задаюць гістарычны кантэкст і крытэрыі параўнання. Раздзел A разглядае чалавечага адрасата праграмы; B — дзве праекцыі WEB; C–F — простыя лікі, зыходны WEB, TANGLE, WEAVE і палегчаны C++-варыянт. G–H даследуюць вытворчую складанасць і межы інструмента; I — пераноснасць і ўзнаўляльныя асяроддзі; J — сетку іменаваных фрагментаў і залежнасцей; K — стыль; L — выдаткі і перавагі; M — роднасныя падыходы; N — рэтраспектыву і перспектывы. Высновы падсумоўваюць прапанову Кнута, пераемнасць і змену формы, кошт метаду, ролю LLM і далейшае развіццё.
 
-* [Literate Programming: Дональд Кнут, WEB и современные рабочие процессы](https://doi.org/10.5281/zenodo.20608558)
+## Prompt-Literate Workflow
+
+Замацаваны submodule задае чалавечы план, кантракты фрагментаў, абмежаваны промпт, LLM-кандыдата, агляд, тэсты або smoke-check, TRACE і прынятае абнаўленне кананічнай крыніцы. Вынік генерацыі застаецца кандыдатам да агляду і праверкі.
+
 </details>

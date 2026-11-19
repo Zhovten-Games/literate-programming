@@ -1,7 +1,7 @@
 SHELL := /bin/bash
 CXXFLAGS := -std=c++17 -Wall -Wextra -pedantic
 
-.PHONY: noweb-en noweb-uk noweb-ru cweb-en cweb-uk cweb-ru org-en org-uk org-ru quarto-en quarto-uk quarto-ru rmarkdown-en rmarkdown-uk rmarkdown-ru jupyter-en jupyter-uk jupyter-ru validate-locales all
+.PHONY: noweb-en noweb-uk noweb-ru cweb-en cweb-uk cweb-ru org-en org-uk org-ru quarto-en quarto-uk quarto-ru rmarkdown-en rmarkdown-uk rmarkdown-ru jupyter-en jupyter-uk jupyter-ru noweb-be cweb-be org-be quarto-be rmarkdown-be jupyter-be validate-locales all
 
 check_cmd = command -v $(1) >/dev/null 2>&1
 
@@ -22,6 +22,11 @@ noweb-ru:
 		cd examples/ru/02-noweb-like && notangle -Rprogram primes.nw > primes.cpp && g++ $(CXXFLAGS) primes.cpp -o primes && ./primes; \
 	elif ! $(call check_cmd,notangle); then echo "Tool not found: notangle"; \
 	else echo "Tool not found: g++"; fi
+noweb-be:
+	@if $(call check_cmd,notangle) && $(call check_cmd,g++); then \
+		cd examples/be/02-noweb-like && notangle -Rprogram primes.nw > primes.cpp && g++ $(CXXFLAGS) primes.cpp -o primes && ./primes; \
+	elif ! $(call check_cmd,notangle); then echo "Tool not found: notangle"; \
+	else echo "Tool not found: g++"; fi
 
 cweb-en:
 	@if $(call check_cmd,ctangle) && $(call check_cmd,cc); then \
@@ -38,6 +43,11 @@ cweb-uk:
 cweb-ru:
 	@if $(call check_cmd,ctangle) && $(call check_cmd,cc); then \
 		cd examples/ru/01-cweb && ctangle primes.w && cc -Wall -Wextra -pedantic primes.c -o primes && ./primes; \
+	elif ! $(call check_cmd,ctangle); then echo "Tool not found: ctangle"; \
+	else echo "Tool not found: cc"; fi
+cweb-be:
+	@if $(call check_cmd,ctangle) && $(call check_cmd,cc); then \
+		cd examples/be/01-cweb && ctangle primes.w && cc -Wall -Wextra -pedantic primes.c -o primes && ./primes; \
 	elif ! $(call check_cmd,ctangle); then echo "Tool not found: ctangle"; \
 	else echo "Tool not found: cc"; fi
 
@@ -58,6 +68,11 @@ org-ru:
 		cd examples/ru/03-org-babel && emacs --batch primes.org -l org -l ob-tangle --eval '(org-babel-tangle-file "primes.org")' && g++ $(CXXFLAGS) primes.cpp -o primes && ./primes; \
 	elif ! $(call check_cmd,emacs); then echo "Tool not found: emacs"; \
 	else echo "Tool not found: g++"; fi
+org-be:
+	@if $(call check_cmd,emacs) && $(call check_cmd,g++); then \
+		cd examples/be/03-org-babel && emacs --batch primes.org -l org -l ob-tangle --eval '(org-babel-tangle-file "primes.org")' && g++ $(CXXFLAGS) primes.cpp -o primes && ./primes; \
+	elif ! $(call check_cmd,emacs); then echo "Tool not found: emacs"; \
+	else echo "Tool not found: g++"; fi
 
 quarto-en:
 	@if $(call check_cmd,quarto); then cd examples/en/04-quarto && quarto render primes.qmd; else echo "Tool not found: quarto"; fi
@@ -65,23 +80,32 @@ quarto-uk:
 	@if $(call check_cmd,quarto); then cd examples/uk/04-quarto && quarto render primes.qmd; else echo "Tool not found: quarto"; fi
 quarto-ru:
 	@if $(call check_cmd,quarto); then cd examples/ru/04-quarto && quarto render primes.qmd; else echo "Tool not found: quarto"; fi
+
+quarto-be:
+	@if $(call check_cmd,quarto); then cd examples/be/04-quarto && quarto render primes.qmd; else echo "Tool not found: quarto"; fi
 rmarkdown-en:
 	@if $(call check_cmd,Rscript); then cd examples/en/06-rmarkdown && Rscript -e "rmarkdown::render('primes.Rmd')"; else echo "Tool not found: Rscript"; fi
 rmarkdown-uk:
 	@if $(call check_cmd,Rscript); then cd examples/uk/06-rmarkdown && Rscript -e "rmarkdown::render('primes.Rmd')"; else echo "Tool not found: Rscript"; fi
 rmarkdown-ru:
 	@if $(call check_cmd,Rscript); then cd examples/ru/06-rmarkdown && Rscript -e "rmarkdown::render('primes.Rmd')"; else echo "Tool not found: Rscript"; fi
+
+rmarkdown-be:
+	@if $(call check_cmd,Rscript); then cd examples/be/06-rmarkdown && Rscript -e "rmarkdown::render('primes.Rmd')"; else echo "Tool not found: Rscript"; fi
 jupyter-en:
 	@if $(call check_cmd,python3); then cd examples/en/05-jupyter && python3 primes.py; else echo "Tool not found: python3"; fi
 jupyter-uk:
 	@if $(call check_cmd,python3); then cd examples/uk/05-jupyter && python3 primes.py; else echo "Tool not found: python3"; fi
 jupyter-ru:
 	@if $(call check_cmd,python3); then cd examples/ru/05-jupyter && python3 primes.py; else echo "Tool not found: python3"; fi
+jupyter-be:
+	@if $(call check_cmd,python3); then cd examples/be/05-jupyter && python3 primes.py; else echo "Tool not found: python3"; fi
 
 validate-locales:
 	@python3 methodology/extensions/primes-example/tests/validate-primes-locales.py \
 		examples/en/07-prompt-literate \
 		examples/uk/07-prompt-literate \
-		examples/ru/07-prompt-literate
+		examples/ru/07-prompt-literate \
+		examples/be/07-prompt-literate
 
-all: noweb-en noweb-uk noweb-ru cweb-en cweb-uk cweb-ru org-en org-uk org-ru quarto-en quarto-uk quarto-ru rmarkdown-en rmarkdown-uk rmarkdown-ru jupyter-en jupyter-uk jupyter-ru validate-locales
+all: noweb-be cweb-be org-be quarto-be rmarkdown-be jupyter-be noweb-en noweb-uk noweb-ru cweb-en cweb-uk cweb-ru org-en org-uk org-ru quarto-en quarto-uk quarto-ru rmarkdown-en rmarkdown-uk rmarkdown-ru jupyter-en jupyter-uk jupyter-ru validate-locales
